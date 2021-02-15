@@ -32,7 +32,7 @@
   <div class="error" v-if="error">
     BŁĘDNE ID
   </div>
-  <div class="footer">Autor: Katarzyna Puławska</div>
+  <div class="footer">Autor: Katarzyna Puławska (<a @click="$router.push({ name: 'About'})">informacje o projecie</a>)</div>
 </div>
 </template>
 
@@ -146,6 +146,10 @@ export default {
     color: white;
     text-align: center;
     padding: 10px;
+  }
+  a {
+    cursor: pointer;
+    text-decoration: underline;
   }
 }
 </style>
